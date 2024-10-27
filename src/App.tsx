@@ -15,7 +15,7 @@ const App: React.FC = () => { // Specifica il tipo del componente
         onClick={() => setIsDarkMode((prev) => !prev)}
         aria-label="Cambia tema" // Aggiungi aria-label per accessibilità
       >
-        {isDarkMode ? <FaSun /> : <FaMoon />} {isDarkMode ? 'Chiaro' : 'Scuro'}
+        {isDarkMode ? <FaSun /> : <FaMoon />} {isDarkMode ? '' : ''}
       </button>
       <EyeExercise />
       <Footer /> {/* Aggiungi il Footer */}
