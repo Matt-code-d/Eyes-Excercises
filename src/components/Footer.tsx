@@ -1,5 +1,4 @@
 import React from "react";
-import { FaHeart, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTheme } from '../ThemeContext'; // Importa il contesto del tema
 
 const Footer: React.FC = () => {
