@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       {/* Wrapper for centered logo and App */}
       <div style={{ textAlign: 'center' }}>
         {/* Centered Logo */}
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '5px', margintop: '10px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '5px' }}>
         <Logo />
       </div>
         <App />
