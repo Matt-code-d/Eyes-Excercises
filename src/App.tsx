@@ -1,4 +1,3 @@
-import React from 'react';
 import EyeExercise from './components/EyeExercise';
 import Footer from './components/Footer'; // Assicurati di importare il footer
 import { useTheme } from './ThemeContext'; // Importa il contesto del tema
