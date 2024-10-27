@@ -1,4 +1,5 @@
 import React from "react";
+import { FaHeart, FaGithub } from "react-icons/fa"; // Removed FaLinkedin import
 import { useTheme } from '../ThemeContext'; // Importa il contesto del tema
 
 const Footer: React.FC = () => {
@@ -41,6 +42,7 @@ const Footer: React.FC = () => {
           >
             <FaGithub size={24} />
           </a>
+          {/* Removed LinkedIn icon */}
         </div>
         <p className={`has-text-grey-light ${isDarkMode ? 'has-text-light' : 'has-text-dark'}`} style={{ fontSize: "0.9rem" }}>
           &copy; {new Date().getFullYear()} matteosantoro.dev
