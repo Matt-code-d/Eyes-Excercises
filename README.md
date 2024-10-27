@@ -1,5 +1,3 @@
-# Creating a README.md file with the provided content
-readme_content = """
 # EyeFit: Eye Exercise Application
 
 ## Description
