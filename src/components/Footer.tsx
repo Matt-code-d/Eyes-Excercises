@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
         </p>
         <div className="social-icons mb-2">
           <a
-            href="https://github.com/matteosantoro" // Inserisci il tuo link GitHub
+            href="https://github.com/Matt-code-d" // Inserisci il tuo link GitHub
             target="_blank"
             rel="noopener noreferrer"
             className={`button mx-1 ${isDarkMode ? 'is-light' : 'is-dark'}`}
@@ -41,17 +41,6 @@ const Footer: React.FC = () => {
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
           >
             <FaGithub size={24} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/matteosantoro/" // Inserisci il tuo link LinkedIn
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`button mx-1 ${isDarkMode ? 'is-light' : 'is-dark'}`}
-            style={{ transition: "transform 0.2s" }}
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-          >
-            <FaLinkedin size={24} />
           </a>
         </div>
         <p className={`has-text-grey-light ${isDarkMode ? 'has-text-light' : 'has-text-dark'}`} style={{ fontSize: "0.9rem" }}>
