@@ -1,0 +1,52 @@
+.circle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  border-radius: 50%;
+  transition: left 0.05s linear;
+}
+
+.min-height {
+  min-height: 400px;
+}
+
+/* index.css */
+body.has-background-light {
+  background-color: #f5f5f5; /* Colore di sfondo chiaro */
+  color: #363636; /* Colore del testo scuro */
+}
+
+body.has-background-dark {
+  background-color: #2c2c2c; /* Colore di sfondo scuro */
+  color: #f5f5f5; /* Colore del testo chiaro */
+}
+
+.has-background-dark .button {
+  background-color: #4a4a4a; /* Colore di sfondo dei pulsanti nella modalità scura */
+  color: #f5f5f5; /* Colore del testo dei pulsanti nella modalità scura */
+}
+
+.has-background-light .button {
+  background-color: #00d1b2; /* Colore di sfondo dei pulsanti nella modalità chiara */
+  color: #363636; /* Colore del testo dei pulsanti nella modalità chiara */
+  border: none;
+}
+
+.footer-background-dark {
+  background-color: #14161a; /* Colore di sfondo dei pulsanti nella modalità chiara */
+  color: #f5f5f5; /* Colore del testo dei pulsanti nella modalità chiara */
+  border: none;
+}
+
+.footer-background-light {
+  background-color: #ececec; /* Colore di sfondo dei pulsanti nella modalità chiara */
+  color: #363636; /* Colore del testo dei pulsanti nella modalità chiara */
+  border: none;
+}
+
+.app {
+  min-height: 100vh; /* Assicura che il corpo prenda tutta l'altezza */
+}
