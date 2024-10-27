@@ -4,16 +4,19 @@ import App from './App';
 import 'bulma/css/bulma.css';
 import './index.css';
 import { ThemeProvider } from './ThemeContext';
-import logo from './assets/react.svg'; // Import the logo
+import Logo from './components/Logo';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider>
-      {/* Centered Logo */}
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-        <img src={logo} alt="React Logo" style={{ width: '100px', height: '100px' }} />
+      {/* Wrapper for centered logo and App */}
+      <div style={{ textAlign: 'center' }}>
+        {/* Centered Logo */}
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '5px', margintop: '10px' }}>
+        <Logo />
       </div>
-      <App />
+        <App />
+      </div>
     </ThemeProvider>
   </React.StrictMode>
 );
