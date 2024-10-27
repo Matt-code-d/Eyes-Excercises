@@ -2,7 +2,7 @@ import React from "react";
 import { FaHeart, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTheme } from '../ThemeContext'; // Importa il contesto del tema
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const { isDarkMode } = useTheme(); // Usa il contesto del tema
 
   return (
@@ -21,10 +21,11 @@ const Footer = () => {
           <a
             href="https://matteosantoro.dev"
             target="_blank"
+            rel="noopener noreferrer"
             className={`has-text-weight-bold ${isDarkMode ? 'has-text-white' : 'has-text-dark'}`}
             style={{ transition: "color 0.3s" }}
-            onMouseEnter={(e) => (e.target.style.color = "#00d1b2")}
-            onMouseLeave={(e) => (e.target.style.color = isDarkMode ? "white" : "black")}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#00d1b2")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = isDarkMode ? "white" : "black")}
           >
             matteosantoro.dev
           </a>
@@ -36,8 +37,8 @@ const Footer = () => {
             rel="noopener noreferrer"
             className={`button mx-1 ${isDarkMode ? 'is-light' : 'is-dark'}`}
             style={{ transition: "transform 0.2s" }}
-            onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
-            onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
           >
             <FaGithub size={24} />
           </a>
@@ -47,8 +48,8 @@ const Footer = () => {
             rel="noopener noreferrer"
             className={`button mx-1 ${isDarkMode ? 'is-light' : 'is-dark'}`}
             style={{ transition: "transform 0.2s" }}
-            onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
-            onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
           >
             <FaLinkedin size={24} />
           </a>
