@@ -27,7 +27,7 @@ const EyeExercise: React.FC = () => {
   const startExercise = () => {
     resetExercise();
     setIsMoving(true);
-    let id: NodeJS.Timeout;
+    let id: NodeJS.Timeout | null = null; // Declare id as null initially
     const updateInterval = 50;
 
     switch (exerciseType) {
@@ -35,7 +35,7 @@ const EyeExercise: React.FC = () => {
         id = setInterval(() => {
           setPosition((prev) => {
             if (prev <= 10) {
-              clearInterval(id);
+              clearInterval(id!); // Use id safely here
               setIsMoving(false);
               setCycle((c) => c + 1);
               return 100;
@@ -49,7 +49,7 @@ const EyeExercise: React.FC = () => {
         id = setInterval(() => {
           setPosition((prev) => {
             if (prev >= 100) {
-              clearInterval(id);
+              clearInterval(id!); // Use id safely here
               setIsMoving(false);
               setCycle((c) => c + 1);
               return 0;
@@ -83,7 +83,7 @@ const EyeExercise: React.FC = () => {
         break;
     }
 
-    setIntervalId(id);
+    setIntervalId(id); // Store the interval ID
   };
 
   const resetExercise = () => {
